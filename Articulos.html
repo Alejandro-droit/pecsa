@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artículos - Estación PECSA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .card-img-top {
+      height: 200px;
+      object-fit: contain;
+    }
+    @media (max-width: 768px) {
+      .card-img-top {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary text-light m-0 p-0">
+        <div class="container-fluid">
+          <a href="index.html">
+            <img src="img/logo pecsa.png" alt="logo pecsa" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ms-5">
+                <a class="nav-link active text-white me-3" href="index.html"><b>Inicio</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="AceitesyLubricantes.html"><b>Aceites y Lubricantes</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="Articulos.html"><b>Artículos</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="Combustibles.html"><b>Combustibles</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white me-3" href="AfichesyVideos.html"><b>Afiches y Videos</b></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Carrusel -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/ARTICULOS.png" class="d-block w-100" alt="Artículos banner" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- Título -->
+  <div class="container mt-5">
+    <h2 class="text-center "><strong>Artículos</strong></h2>
+  </div>
+
+  <!-- Cards -->
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Repite esta estructura para cada producto -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/limpia parablisas.png" class="card-img-top" alt="Limpia Parabrisas" />
+          <div class="card-body text-center">
+            <p><strong>LIMPIA PARABRISAS</strong><br>S/ 8.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/aromatizante.png" class="card-img-top" alt="Aromatizante" />
+          <div class="card-body text-center">
+            <p><strong>AROMATIZANTE</strong><br>S/ 5.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/cigarreras.png" class="card-img-top" alt="Cigarrera" />
+          <div class="card-body text-center">
+            <p><strong>CIGARRERA</strong><br>S/ 15.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/medidor de aire.jpg" class="card-img-top" alt="Medidor de Aire" />
+          <div class="card-body text-center">
+            <p><strong>MEDIDOR DE AIRE</strong><br>S/ 15.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/shampoo.png" class="card-img-top" alt="Shampoo" />
+          <div class="card-body text-center">
+            <p><strong>SHAMPOO</strong><br>S/ 25.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/cable.png" class="card-img-top" alt="Cable USB-C" />
+          <div class="card-body text-center">
+            <p><strong>CABLE USB-C</strong><br>S/ 15.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/cilicona pequeña.png" class="card-img-top" alt="Silicona pequeña" />
+          <div class="card-body text-center">
+            <p><strong>SILICONA PEQUEÑA</strong><br>S/ 12.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/cilicona.jpg" class="card-img-top" alt="Silicona grande" />
+          <div class="card-body text-center">
+            <p><strong>SILICONA GRANDE</strong><br>S/ 16.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-black text-white text-center py-3 mt-5">
+    <p class="mb-0">Creado por Alejandro Quispe - 2025</p>
+  </footer>
+</body>
+</html>

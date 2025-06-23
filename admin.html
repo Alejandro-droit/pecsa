@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador - Estación PECSA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .card img {
+        height: 200px;
+        object-fit: contain;
+      }
+
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 576px) {
+        .card img {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger text-light m-0 p-0">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="img/logo pecsa.png" alt="logo pecsa" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white me-3" href="index.html"
+                ><b>Inicio</b></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container mt-4">
+      <h2 class="text-center mb-4">Panel de Administrador</h2>
+
+      <div class="contenedor">
+        <h4 class="mb-3">Editar Precios de Combustibles</h4>
+        <div class="row">
+          <!-- Regular -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="img/regular1.png" class="card-img-top" alt="Regular" />
+              <div class="card-body">
+                <label for="precio-regular">Regular (S/)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="precio-regular"
+                  value="15.00"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="img/premium2.png" class="card-img-top" alt="Premium" />
+              <div class="card-body">
+                <label for="precio-premium">Premium (S/)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="precio-premium"
+                  value="16.20"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Diesel -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="img/diesel1.png" class="card-img-top" alt="Diesel" />
+              <div class="card-body">
+                <label for="precio-diesel">Diesel (S/)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="precio-diesel"
+                  value="15.30"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón guardar -->
+        <div class="text-center mt-4">
+          <button onclick="guardarTodosLosPrecios()" class="btn btn-success px-5">
+  Guardar precios
+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 bg-dark text-white py-3">
+      <p class="text-center mb-0">
+        Creado por Alejandro Quispe - 2025 |
+        <a href="index.html" class="text-white">Cerrar sesión</a>
+      </p>
+    </footer>
+
+    <script type="module">
+  import { guardarTodosLosPrecios } from './guardarprecio.js';
+  window.guardarTodosLosPrecios = guardarTodosLosPrecios;
+</script>
+  </body>
+</html>
