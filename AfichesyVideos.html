@@ -1,142 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afiches y Videos - Estación PECSA</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-    .card-img-top {
-      height: 250px;
-      object-fit: cover;
-    }
-
-    @media (max-width: 768px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afiches y Videos - Estación PECSA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
       .card-img-top {
-        height: 180px;
+        height: auto;
+        max-height: 300px;
+        object-fit: contain;
+        background-color: white;
+        padding: 10px;
+        width: 100%;
       }
-      .card-text {
-        font-size: 14px;
+
+      @media (max-width: 768px) {
+        .card-img-top {
+          max-height: 200px;
+        }
+        .card-text {
+          font-size: 14px;
+        }
       }
-    }
 
-    video {
-      width: 100%;
-      height: auto;
-      border-radius: 0.5rem;
-    }
+      video {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+      }
 
-    .card {
-      border-radius: 0.5rem;
-      overflow: hidden;
-    }
+      .card {
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
 
-    .footer {
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-    }
-  </style>
-</head>
+      .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+      }
+    </style>
+  </head>
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-danger text-light m-0 p-0">
-    <div class="container-fluid">
-      <a href="index.html">
-        <img src="img/logo pecsa.png" alt="logo pecsa" height="50" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item ms-5">
-            <a class="nav-link active text-white me-3" href="index.html"><b>Inicio</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white me-3" href="AceitesyLubricantes.html"><b>Aceites y Lubricantes</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white me-3" href="Articulos.html"><b>Artículos</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white me-3" href="Combustibles.html"><b>Combustibles</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white me-3" href="AfichesyVideos.html"><b>Afiches y Videos</b></a>
-          </li>
-        </ul>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger text-light m-0 p-0">
+      <div class="container-fluid">
+        <a href="index.html">
+          <img src="img/logo pecsa.png" alt="logo pecsa" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ms-5">
+              <a class="nav-link active text-white me-3" href="index.html"><b>Inicio</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="AceitesyLubricantes.html"><b>Aceites y Lubricantes</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="Articulos.html"><b>Artículos</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="Combustibles.html"><b>Combustibles</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white me-3" href="AfichesyVideos.html"><b>Afiches y Videos</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container mt-4">
+      <h2 class="text-center mb-4"><strong>Afiches y Videos</strong></h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Afiche 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="medios/435107228_746264427652606_2410045170184741598_n.jpg"
+              class="card-img-top"
+              alt="Afiche Promocional"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Promoción de temporada</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Afiche 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="medios/Afiche PREMIUM.png"
+              class="card-img-top"
+              alt="Afiche Producto"
+            />
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Producto destacado</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="ratio ratio-16x9">
+              <video controls>
+                <source src="medios/Produccion final.mp4" type="video/mp4" />
+                Tu navegador no soporta la reproducción de video.
+              </video>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-center fw-bold">Prueba de Agua</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Contenido -->
-  <div class="container mt-4">
-    <h2 class="text-center mb-4"><strong>Afiches y Videos</strong></h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      <!-- Afiche 1 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img
-            src="medios/435107228_746264427652606_2410045170184741598_n.jpg"
-            class="card-img-top"
-            alt="Afiche Promocional"
-          />
-          <div class="card-body">
-            <p class="card-text text-center fw-bold">Promoción de temporada</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Afiche 2 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img
-            src="medios/Afiche PREMIUM.png"
-            class="card-img-top"
-            alt="Afiche Producto"
-          />
-          <div class="card-body">
-            <p class="card-text text-center fw-bold">Producto destacado</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="ratio ratio-16x9">
-            <video controls>
-              <source src="medios/Produccion final.mp4" type="video/mp4" />
-              Tu navegador no soporta la reproducción de video.
-            </video>
-          </div>
-          <div class="card-body">
-            <p class="card-text text-center fw-bold">Prueba de Agua</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer mt-5">
-    <p class="mb-0">Creado por Alejandro Quispe - 2025</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <p class="mb-0">Creado por Alejandro Quispe - 2025</p>
+    </footer>
+  </body>
 </html>
